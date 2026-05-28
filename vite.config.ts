@@ -8,9 +8,6 @@ export default defineConfig({
       'omt-router/dist/omt-router.css': fileURLToPath(
         new URL('./node_modules/omt-router/dist/omt-router.css', import.meta.url),
       ),
-      'omt-router': fileURLToPath(
-        new URL('./node_modules/omt-router/dist/omt-router.js', import.meta.url),
-      ),
     },
   },
 })
