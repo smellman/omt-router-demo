@@ -1,11 +1,14 @@
 import './style.css'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import 'omt-router/dist/omt-router.css'
-import maplibregl from 'maplibre-gl'
+import * as maplibregl from 'maplibre-gl'
 import {
   MapLibreRoutingControl,
   route
 } from 'omt-router'
+import { setWorkerUrl } from 'maplibre-gl'
+import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
+setWorkerUrl(workerUrl)
 
 const map = new maplibregl.Map({
   container: 'map',
